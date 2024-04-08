@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antojitos Laguna Magica</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="Main.js"></script>
+</head>
+<body>
+<header>
+    <h1>Antojitos Laguna Magica</h1>
+</header>
+<!--Esto es el menu izquierdo-->
+<!--<div class="menu-btn" onclick="openNav()">Menú</div>-->
+<div class="menu-btn-derecho" onclick="toggleMenuDerecho()">☰</div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#" onmouseover="showImage('https://mandolina.co/wp-content/uploads/2023/06/tacos-clasicos.png')"
+       onmouseout="hideImage()">Sobre Melitta</a>
+    <a href="#"
+       onmouseover="showImage('https://www.eluniversal.com.mx/resizer/-vfHb1Ai7zxRStMrUWGy2tz05SE=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/6SRR6J7NQBG3BCL7CH4UCMB4PY.jpg')"
+       onmouseout="hideImage()">Comunidad/Medios</a>
+</div>
+<!--Esto es el menu derecho-->
+<div id="menuDerecho" class="menu-derecho">
+    <a href="contacto.html">Contacto</a>
+</div>
+
+
+<!--Cuerpo -->
+<main>
+    <div class="content">
+        <h2>Bienvenidos a Antojitos Laguna Magica</h2>
+        <p>El restaurante Antojitos “Laguna mágica” tiene cómo dueña a la Señora Rosalba Hernández Quiroz, donde vende
+            platillos típicos del
+            estado de Quintana Roo, México.
+            El restaurante es un local pequeño de 5 mesas situado al lado de la plaza municipal y el Fuerte de Bacalar,
+            justo en la esquina de la calle 20 con la avenida 7. La carta es económica y hacen todo tipo de antojitos;
+            quesadillas, picaditas, empanadas, salbutes, tacos dorados y frijoles entre otros muchos platos de comida
+            típica de
+            la región. Es un local sencillo, con mesas y sillas de plástico, un pequeño baño</p>
+        <div class="contenedor-flex">
+            <div class="imagen-container">
+                <img src="img/empanadas.jpeg" alt="Empanadas">
+            </div>
+            <div class="imagen-container">
+                <img src="img/sabulte.jpeg" alt="Sabulte">
+            </div>
+            <div class="imagen-container">
+                <img src="img/Torta.jpg" alt="Torta">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="contenedor-flex2">
+                <div class="">
+                    <img src="img/Antojitos.jpeg" alt="Empanadas">
+                </div>
+                <div class="">
+                    <img src="img/Bebidas.jpeg" alt="Sabulte">
+                </div>
+            </div>
+            <p>La misión que tiene este proyecto es promocionar el local de la señorita Rosalva Hernandez por medio de
+                una página web.
+                Nosotros queremos darle más popularidad y clientela al local, pero sobre todo queremos que se vuelva un
+                lugar habitual
+                donde las personas disfruten de un sabroso platillo regional junto a la familia o amigos, tanto para los
+                turistas cómo
+                para los habitantes de nuestra comunidad.
+                Buscamos transmitir un ambiente de amor, armonía, confianza, paz, donde haya respeto entre
+                las personas sin discriminación a sus raíces e idioma, queremos fomentar la igualdad y la cortesía
+                mútua.
+                Es por esto que te invitamos a gozar de un rico y económico platillo tradicional disfrutando de una
+                buena atención al cliente.</p>
+        </div>
+        <div class="horario">
+            <h2>Horario</h2>
+            <div class="grid-horario">
+                <p>Lunes</p>
+                <p>07:00-20:00</p>
+                <p>Martes</p>
+                <p>07:00-20:00</p>
+                <p>Miércoles</p>
+                <p>07:00-20:00</p>
+                <p>Jueves</p>
+                <p>07:00-20:00</p>
+                <p>Viernes</p>
+                <p>07:00-20:00</p>
+                <p>Sábado</p>
+                <p>07:00-20:00</p>
+                <p>Domingo</p>
+                <p>Cerrado</p>
+            </div>
+            <div class="caracteristicas">
+                <h2>Características</h2>
+                <p>Solamente efectivo</p>
+                <p>Asientos al aire libre</p>
+                <p>Para llevar</p>
+                <p>Sin reserva</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="direccion">
+        <h2>Dirección</h2>
+        <p>Av. 19-B, Bacalar, Quintana Roo, Mexico</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d15118.263781146145!2d-88.397011!3d18.683464!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQxJzAwLjUiTiA4OMKwMjMnNDkuMiJX!5e0!3m2!1ses!2sus!4v1712552484971!5m2!1ses!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
+
+
+<footer>
+    <p>Derechos reservados © 2024 Antojitos Laguna Magica</p>
+</footer>
+
+
+</body>
+</html>

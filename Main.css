@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.flex {
+    display: flex; /* Activa flexbox */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 10px;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.horario {
+    padding: 20px; /* Añade espacio alrededor del elemento */
+    border: 10px solid #980000; /* Añade un borde para claridad visual */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    margin: 20px 10px; /* Margen arriba y abajo de 20px, margen izquierda y derecha de 10px */
+    border-radius: 10px;
+}
+
+.caracteristicas{
+    text-align: center;
+}
+
+.grid-horario {
+    display: grid; /* Activa el grid layout */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 10px; /* Espacio entre las celdas del grid */
+}
+
+h2 {
+    grid-column: span 2; /* El h2 abarca las dos columnas del grid */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+}
+
+.contenedor-flex {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Distribuye las imágenes equitativamente */
+    align-items: center; /* Centra verticalmente las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias filas si es necesario */
+    gap: 10px;
+}
+.contenedor-flex2 {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Distribuye las imágenes equitativamente */
+    align-items: center; /* Centra verticalmente las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias filas si es necesario */
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.imagen-container img {
+    width: 350px; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: 300px; /* Mantiene la relación de aspecto de las imágenes */
+}
+
+header {
+    background-color: #DAA520;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.sidebar, .menu-derecho {
+    height: 100vh;
+    width: 250px;
+    background-color: #333;/*$nuevoEstudio*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+}
+.menu-derecho {
+    position: fixed;
+    top: 0;
+    right: -250px;
+}
+.sidebar a, .menu-derecho a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover, .menu-derecho a:hover {
+    background-color: #f92850;
+    color: #90f5b8;
+}
+.menu-btn, .menu-btn-derecho {
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn {
+    left: 35px;
+}
+.menu-btn-derecho {
+    right: 35px;
+}
+.content {
+    padding: 16px;
+    background-color: #fff4ee;
+    transition: margin-left 0.5s, margin-right 0.5s;
+    text-align: center;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 20px 0 0; /* 10px arriba, centrado horizontalmente, 0 abajo */
+    padding: 20px;
+    text-align: center;
+    background-color: #474f00;
+    border-radius: 10px;
+    color: white;
+
+}
+.menu > p{
+    text-align: justify;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto; /* Dos filas de altura automática */
+    gap: 10px; /* Espacio entre las celdas */
+}
+
+.item {
+    background-color: #221c20;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px
+}
+.direccion > p {
+    text-align: center;
+}
+.direccion > iframe{
+    display: block; /* Para evitar espacios verticales adicionales */
+    margin: 16px auto; /* Centra horizontalmente el iframe dentro de su contenedor */
+}
+.especial {
+    grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+
+footer {
+    background-color: #474f00;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.sidebar:hover {
+    left: 0;
+}
+.menu-derecho:hover {
+    right: 0;
+}
+.hover-image {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+ul {
+    list-style-type: none; /* Quita las viñetas de la lista */
+    padding: 0; /* Quita el espacio interno de la lista */
+}
+
+li {
+    padding: 5px 0; /* Añade un espacio vertical entre los elementos de la lista */
+}

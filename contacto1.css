@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #DAA520;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.sidebar, .menu-derecho {
+    height: 100vh;
+    width: 250px;
+    background-color: #333;/*$nuevoEstudio*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+}
+.menu-derecho {
+    position: fixed;
+    top: 0;
+    right: -250px;
+}
+.sidebar a, .menu-derecho a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover, .menu-derecho a:hover {
+    background-color: #f92850;
+    color: #90f5b8;
+}
+.menu-btn, .menu-btn-derecho {
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn {
+    left: 35px;
+}
+.menu-btn-derecho {
+    right: 35px;
+}
+main {
+    text-align: center;
+}
+
+/*.container {*/
+/*    max-width: 600px;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*    background-color: #fff;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+/*}*/
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+input[type="submit"] {
+    background-color: #DAA520;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    background-color: #C0A01F;
+}
+
+.flex {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente los elementos en el eje cruzado */
+}
+
+.flex > div {
+    flex: 1; /* Ambos divs ocuparán el mismo espacio horizontalmente */
+    padding: 10px; /* Espaciado interno para mejorar la apariencia */
+}
+
+.container {
+    background-color: #f4f4f4; /* Color de fondo para el segundo div */
+    border-radius: 5px; /* Borde redondeado */
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
